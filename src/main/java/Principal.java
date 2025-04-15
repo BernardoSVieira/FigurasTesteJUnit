@@ -1,6 +1,4 @@
-
 import figuras.Desenho;
-
 import javax.swing.JOptionPane;
 
 public class Principal {
@@ -9,11 +7,7 @@ public class Principal {
         String opcao = "";
         Desenho desenho = new Desenho();
         while (!opcao.equals("9")) {
-            opcao = JOptionPane.showInputDialog("1 - Adiciona um Triângulo "
-                    + "\n2 - Adiciona um Retângulo "
-                    + "\n3 - Listar figuras do desenho"
-                    + "\n4 - Área desenho"
-                    + "\n9 - Sair");
+            opcao = JOptionPane.showInputDialog("1 - Adiciona um Triângulo " + "\n2 - Adiciona um Retângulo " + "\n3 - Listar figuras do desenho" + "\n4 - Área desenho" + "\n9 - Sair");
             switch (opcao) {
                 case "1": {
                     Triangulo triangulo = new Triangulo();
@@ -31,7 +25,7 @@ public class Principal {
                     retangulo.setBase(Double.parseDouble(JOptionPane.showInputDialog("Digite a Base do Retângulo")));
                     retangulo.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Digite a Altura do Retângulo")));
                     JOptionPane.showMessageDialog(null, "Área Retângulo: " + retangulo.getArea());
-//Adiciona o objeto ao desenho
+                    //Adiciona o objeto ao desenho
                     desenho.adicionar(retangulo);
                     break;
                 }

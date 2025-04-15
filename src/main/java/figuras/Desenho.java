@@ -1,6 +1,5 @@
 package figuras;
 
-
 import figuras.Figura;
 import java.util.ArrayList;
 import java.util.List;
